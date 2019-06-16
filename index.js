@@ -13,7 +13,7 @@ mf.event.OnCommon = class extends mf.Event {
         try {
             super();
             this.name('OnCommon');
-            this.prmMap('handler', 'eventName');
+            this.prmMap(["handler", "eventName"]);
             this.prmOpt(po, p2);
         } catch (e) {
             console.error(e.stack);

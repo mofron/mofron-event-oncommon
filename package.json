@@ -1,6 +1,6 @@
 {
   "name": "mofron-event-oncommon",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "common event about onX for mofron",
   "main": "index.js",
   "scripts": {
