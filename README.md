@@ -1,4 +1,4 @@
-# oncommon.js
+# mofron-event-oncommon
 [mofron](https://mofron.github.io/mofron/) is module based frontend framework.
 
 on-event common module for mofron
@@ -14,7 +14,7 @@ on-event common module for mofron
 
 # Install
 ```
-npm install mofron oncommon.js
+npm install mofron mofron-event-oncommon
 ```
 
 # Sample

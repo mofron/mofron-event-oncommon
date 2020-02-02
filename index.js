@@ -1,5 +1,5 @@
 /**
- * @file oncommon.js
+ * @file mofron-event-oncommon/index.js
  * @brief on-event common module for mofron
  * ## event function parameter
  *  - component: event target component object
