@@ -1,6 +1,6 @@
 {
   "name": "mofron-event-oncommon",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "common event about onX for mofron",
   "main": "index.js",
   "scripts": {
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/simpart/mofron-event-oncommon.git"
+    "url": "git+https://github.com/mofron/mofron-event-oncommon.git"
   },
   "keywords": [
-    "front-end"
+    "front-end","mofron"
   ],
   "author": "simparts",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/simpart/mofron-event-oncommon/issues"
+    "url": "https://github.com/mofron/mofron-event-oncommon/issues"
   },
-  "homepage": "https://github.com/simpart/mofron-event-oncommon#readme"
+  "homepage": "https://github.com/mofron/mofron-event-oncommon#readme"
 }
