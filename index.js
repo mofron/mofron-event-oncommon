@@ -11,8 +11,8 @@ module.exports = class extends mofron.class.Event {
     /**
      * initialize event
      * 
-     * @param (mixed) short-form parameter
-     *                 key-value: event config
+     * @param short-form parameter
+     *        key-value: event config
      * @short listener,ename
      * @type private
      */
@@ -63,9 +63,13 @@ module.exports = class extends mofron.class.Event {
                 (undefined === tgt_dom.getRawDom()[ename])) {
                 throw new Error('invalid event name : ' + ename);
             }
-            let evt_obj = this;
+            let evt_obj  = this;
+	    let evt_buff = tgt_dom.getRawDom()[ename];
             tgt_dom.getRawDom()[ename] = (ev) => {
                 try {
+		    if ("function" === typeof evt_buff) {
+                        evt_buff(ev);
+		    }
 		    evt_obj.execListener(ev);
 		} catch (e) {
                     console.error(e.stack);
