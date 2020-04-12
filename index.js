@@ -11,12 +11,13 @@ module.exports = class extends mofron.class.Event {
     /**
      * initialize event
      * 
-     * @param short-form parameter
-     *        key-value: event config
+     * @param mixed: listener config parameter
+     *        key-value: event config list
+     * @param string: ename config parameter
      * @short listener,ename
      * @type private
      */
-    constructor (prm) {
+    constructor (p1, p2) {
         try {
             super();
             this.name('OnCommon');
@@ -24,8 +25,8 @@ module.exports = class extends mofron.class.Event {
 	    /* init config */
 	    this.confmng().add("ename", { type: "string" });
 	    /* add config */
-	    if (undefined !== prm) {
-                this.config(prm);
+	    if (0 < arguments.length) {
+                this.config(p1,p2);
 	    }
         } catch (e) {
             console.error(e.stack);
@@ -34,7 +35,7 @@ module.exports = class extends mofron.class.Event {
     }
     
     /**
-     * envent name setter/getter
+     * event name setter/getter
      * 
      * @param (string) event name
      *                 undefined: call as getter
