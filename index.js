@@ -11,16 +11,16 @@ module.exports = class extends mofron.class.Event {
     /**
      * initialize event
      * 
-     * @param mixed: listener config parameter
-     *        key-value: event config list
-     * @param string: ename config parameter
+     * @param (mixed) listener config parameter
+     *                key-value: event config list
+     * @param (string) ename config parameter
      * @short listener,ename
      * @type private
      */
     constructor (p1, p2) {
         try {
             super();
-            this.name('OnCommon');
+            this.modname('OnCommon');
             this.shortForm("listener", "ename");
 	    /* init config */
 	    this.confmng().add("ename", { type: "string" });
